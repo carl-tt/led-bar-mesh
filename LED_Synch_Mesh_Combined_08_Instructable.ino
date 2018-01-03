@@ -12,6 +12,8 @@
  *
  */
 
+// Disable interrupts allowing longer led strips without flicker.  Mesh still settles nearly as fast
+#define FASTLED_ALLOW_INTERRUPTS 0
 // LED Setup - must come before the painlessMesh so CRGB can be used as a return type
 #include <FastLED.h>
 // How many leds in your strip?
